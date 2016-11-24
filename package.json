@@ -40,7 +40,8 @@
   },
   "scripts": {
     "prepublish": "gulp",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "sed -i -e 's:react/lib:react-dom/lib:g' node_modules/react-art/lib/ReactART.js"
   },
   "jest": {
     "rootDir": "src",
